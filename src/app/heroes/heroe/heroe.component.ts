@@ -1,4 +1,3 @@
-import { StringMapWithRename } from '@angular/compiler/src/compiler_facade_interface';
 import { Component } from '@angular/core';
 
 @Component({
@@ -13,15 +12,15 @@ export class HeroeComponent {
     return this.nombre + ' - ' + this.edad;
   }
 
-  get nombreCapitalizado(): string{
-      return this.nombre.toUpperCase();
+  get nombreCapitalizado(): string {
+    return this.nombre.toUpperCase();
   }
 
-  cambiarNombre():void {
-      this.nombre = 'Spiderman';
+  cambiarNombre(): void {
+    this.nombre = 'Spiderman';
   }
 
-  cambiarEdad():void {
-      this.edad = 30;
+  cambiarEdad(): void {
+    this.edad = 30;
   }
 }

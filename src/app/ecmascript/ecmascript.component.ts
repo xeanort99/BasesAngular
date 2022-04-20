@@ -1,9 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-ecmascript',
   templateUrl: './ecmascript.component.html',
-  styleUrls: ['./ecmascript.component.css'],
 })
 export class EcmascriptComponent {
   // ES5
@@ -18,9 +17,8 @@ export class EcmascriptComponent {
     // });
 
     //Con ecmascript
-    this.data.forEach(elem=>{
+    this.data.forEach((elem) => {
       console.log(elem);
-    })
-
+    });
   }
 }

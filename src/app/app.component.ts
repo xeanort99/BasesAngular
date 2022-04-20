@@ -5,6 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: 'app.component.html',
   //la diferencia entre template y templateUrl es que con el primero ponemos el template aqui en html, y en el otro caso no
 })
-export class AppComponent {
-
-}
+export class AppComponent {}

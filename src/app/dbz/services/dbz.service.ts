@@ -3,8 +3,6 @@ import { Personaje } from '../model/personaje';
 
 @Injectable()
 export class DbzService {
-
-
   constructor() {
     console.log('Servicio inicializado');
   }
@@ -21,12 +19,10 @@ export class DbzService {
   ];
 
   get personajes(): Personaje[] {
-      return [...this._personajes]; // ... es spread, rompiendo la referencia de los personajes
+    return [...this._personajes]; // ... es spread, rompiendo la referencia de los personajes
   }
 
-  addPersonaje(personaje:Personaje):void {
-      this._personajes.push(personaje);
+  addPersonaje(personaje: Personaje): void {
+    this._personajes.push(personaje);
   }
-
-
 }
